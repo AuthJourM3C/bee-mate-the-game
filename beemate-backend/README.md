@@ -3,7 +3,9 @@
 Backend proxy and game logic server for the BeeMate serious game.
 
 Setup
-```bash npm install cp .env.example .env npm run dev```
+```bash npm install``` 
+```cp .env.example .env ```
+```npm run dev```
 ## API Endpoints | Method | Path | Description 
 POST | /api/identify/image | Submit image for pollution identification 
 POST | /api/identify/audio | Submit audio for pollution identification 
