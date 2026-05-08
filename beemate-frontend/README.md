@@ -60,11 +60,11 @@ Open http://localhost:5173 in your browser (preferably mobile or DevTools mobile
 
 ## Key Features
 
-- 📷 Photo capture with pollution source tagging
-- 🎤 Audio recording (30s max) with WAV conversion
-- 🗺️ Leaflet maps showing contribution locations
-- 🐝 Pokemon-style evolution tree (3 paths)
-- 🍯 Points system with quality bonuses
-- 🔑 Passcode save/restore system
-- 📱 Mobile-first dark theme design
-- ♿ Accessible UI for children 9-13
+- Photo capture with pollution source tagging
+- Audio recording (30s max) with WAV conversion
+- Leaflet maps showing contribution locations
+- Pokemon-style evolution tree (3 paths)
+- Points system with quality bonuses
+- Passcode save/restore system
+- Mobile-first dark theme design
+- Accessible UI for children 9-13
