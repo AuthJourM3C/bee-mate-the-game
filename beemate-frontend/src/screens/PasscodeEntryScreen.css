@@ -1,0 +1,60 @@
+.passcode-screen__content {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.passcode-screen__header {
+  text-align: center;
+}
+
+.passcode-screen__icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.passcode-screen__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.passcode-screen__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-sm);
+}
+
+.passcode-screen__input {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--color-bg-input);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+  font-family: monospace;
+  text-align: center;
+  letter-spacing: 2px;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.passcode-screen__input:focus {
+  border-color: var(--color-accent-yellow);
+}
+
+.passcode-screen__error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+.passcode-screen__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}

@@ -1,0 +1,104 @@
+.my-map-screen {
+  gap: var(--space-lg);
+}
+
+.my-map-screen__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.my-map-screen__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-3xl) var(--space-lg);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.my-map-screen__empty-icon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.my-map-screen__map-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.my-map-screen__map {
+  width: 100%;
+  flex: 1;
+  min-height: 400px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.my-map-screen__legend {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.my-map-screen__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.my-map-screen__legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.my-map-screen__legend-dot--r {
+  background: var(--color-error);
+}
+
+.my-map-screen__legend-dot--nr {
+  background: var(--color-text-muted);
+}
+
+.my-map-screen__actions {
+  margin-top: auto;
+}
+
+/* Custom Leaflet Marker styles */
+.custom-map-marker {
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  border: 2px solid white;
+}
+
+.custom-map-marker--danger {
+  background-color: var(--color-error, #ef4444);
+  color: white;
+  animation: pulse-marker 2s infinite ease-in-out;
+}
+
+@keyframes pulse-marker {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}

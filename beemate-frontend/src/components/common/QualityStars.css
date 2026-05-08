@@ -1,0 +1,34 @@
+.quality-stars {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.quality-stars__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.quality-stars__stars {
+  display: flex;
+  gap: 2px;
+}
+
+.quality-stars__star {
+  opacity: 0.2;
+  transition: opacity var(--transition-normal);
+}
+
+.quality-stars__star--filled {
+  opacity: 1;
+  animation: sparkle 0.4s ease;
+}
+
+.quality-stars--sm .quality-stars__star { font-size: 14px; }
+.quality-stars--md .quality-stars__star { font-size: 20px; }
+.quality-stars--lg .quality-stars__star { font-size: 28px; }
+
+.quality-stars__text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

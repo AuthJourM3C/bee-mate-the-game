@@ -1,0 +1,24 @@
+.location-map {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.location-map__container {
+  width: 100%;
+  background: var(--color-bg-card);
+}
+
+.location-map__coords {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  background: var(--color-bg-secondary);
+}
+
+.custom-marker .marker-pin {
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+}

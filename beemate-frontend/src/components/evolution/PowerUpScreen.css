@@ -1,0 +1,108 @@
+.power-up-screen {
+  padding: var(--space-xl);
+  cursor: pointer;
+}
+
+.power-up__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+.power-up__step--card {
+  cursor: default;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-bottom: var(--space-xl);
+}
+
+.power-up__avatar-frame {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--color-border-light);
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.power-up__avatar-frame--new {
+  border-color: var(--color-accent-yellow);
+}
+
+.power-up__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.power-up__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-yellow);
+}
+
+.power-up__message {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.power-up__tap {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-xl);
+}
+
+.power-up__card-header {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.power-up__card-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.power-up__card-path {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.power-up__passcode {
+  text-align: center;
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.power-up__passcode-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.power-up__passcode-code {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-yellow);
+  font-family: monospace;
+  letter-spacing: 2px;
+  padding: var(--space-sm);
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-sm);
+  user-select: all;
+}
+
+.power-up__passcode-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}

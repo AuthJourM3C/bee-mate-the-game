@@ -1,0 +1,30 @@
+{
+  "name": "beemate-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BeeMate - Serious Game for Air Pollution Data Collection",
+  "scripts": {
+    "dev": "vite",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "axios": "^1.6.2",
+    "zustand": "^4.4.7",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/leaflet": "^1.9.8",
+    "@vitejs/plugin-react": "^4.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-pwa": "^0.17.4"
+  }
+}

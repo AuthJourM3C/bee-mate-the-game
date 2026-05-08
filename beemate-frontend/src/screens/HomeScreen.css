@@ -1,0 +1,65 @@
+.home-screen {
+  gap: var(--space-2xl);
+  padding: var(--space-xl);
+}
+
+.home-screen__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.home-screen__bee-icon {
+  font-size: 64px;
+  animation: beeFly 3s ease-in-out infinite;
+}
+
+.home-screen__title {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(135deg, var(--color-accent-yellow), var(--color-accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-screen__subtitle {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+}
+
+.home-screen__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 340px;
+}
+
+.home-screen__footer {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  position: absolute;
+  bottom: var(--space-xl);
+}
+
+.home-screen__welcome {
+  text-align: center;
+  max-width: 400px;
+  padding: 0 var(--space-md);
+  margin-top: calc(var(--space-md) * -1);
+}
+
+.home-screen__greeting {
+  font-size: 1.15rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.home-screen__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}

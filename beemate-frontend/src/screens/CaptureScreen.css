@@ -1,0 +1,165 @@
+.capture-screen {
+  gap: var(--space-lg);
+}
+
+.capture-screen__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  flex: 1;
+}
+
+.capture-screen__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-yellow);
+}
+
+.capture-screen__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: calc(-1 * var(--space-sm));
+}
+
+.capture-screen__error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+  padding: var(--space-md);
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.capture-screen__preview {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--color-border);
+}
+
+.capture-screen__image {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  object-fit: contain;
+  background: var(--color-bg-secondary);
+}
+
+.capture-screen__camera-container {
+  width: 100%;
+  height: 40vh;
+  min-height: 250px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capture-screen__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capture-screen__video-placeholder {
+  font-size: 48px;
+  opacity: 0.3;
+}
+
+.capture-screen__recording {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+}
+
+.capture-screen__record-indicator {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.capture-screen__status {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.capture-screen__audio-preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.capture-screen__audio-player {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.capture-screen__audio {
+  width: 100%;
+  height: 44px;
+  border-radius: var(--radius-md);
+}
+
+.capture-screen__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.capture-screen__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.capture-screen__select {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-bg-input);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.capture-screen__select:focus {
+  border-color: var(--color-accent-yellow);
+}
+
+.capture-screen__textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-bg-input);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  outline: none;
+  resize: vertical;
+  font-family: var(--font-family);
+}
+
+.capture-screen__textarea:focus {
+  border-color: var(--color-accent-yellow);
+}
+
+.capture-screen__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
